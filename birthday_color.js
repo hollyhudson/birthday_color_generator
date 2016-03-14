@@ -13,6 +13,6 @@ $(document).ready(function(){
     });
 });
 
-function add_leading_zero(two_digit_num) {
-    return ("0" + two_digit_num).slice(-2);
+function add_leading_zero(num) {
+    return ("0" + num).slice(-2);
 }
