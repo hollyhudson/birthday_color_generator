@@ -2,15 +2,25 @@
 <html>
     
 <head>
-   <link rel="stylesheet" type="text/css" href="style.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-   <script src="interaction.js"></script>
+   <link rel="stylesheet" type="text/css" href="birthday_color.css">
 </head> 
 
 <body>
     
-    <h2>Birthday Color Generator</h2>
+    <h2>Colors!</h2>
+    <div id="box-placement"></div>
     
+    <hr>
+    <button id="set_random_btn">Change Background Color</button>
+    <hr>
+    <form>
+        Set a specific background color.  Enter a number (zero and up, no decimal point).
+        <br>
+        <input class="background-input" type="text" name="background-number">
+    </form>
+    <button id="set_specific_btn">Set Color!</button>
+    <hr>
+    <!--
     <form>
         What is your birthday? (2 digits for year)<br>
         <p id="instructions">month day  year</p>
@@ -18,11 +28,14 @@
         <input class="birthday" type="text" name="day" placeholder="00">
         <input class="birthday" type="text" name="year" placeholder="00">
     </form>
-    <button>Go!</button><br>
+    <button id="birthday_btn">Go!</button><br>
     
     Your color:
     <div id="birthdayColor"></div>
+    -->
     
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+   <script src="birthday_color.js"></script>
 </body>
 
 </html>
